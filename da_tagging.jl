@@ -33,10 +33,6 @@ df = df[!isna(df[:clean_text]), :]
 # bow
 bow, words = to_bow(df[:clean_text], r"\s+|,\s+")
 
-# da
-# act_label_1
-# act_label_2
-
 using DecisionTree
 
 labels = Vector(df[:act_label_1])
